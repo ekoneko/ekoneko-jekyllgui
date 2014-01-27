@@ -1,0 +1,42 @@
+<h2>配置</h2>
+<form class="write-form">
+	<fieldset>
+		<legend>系统</legend>
+		<p><label>
+			链接地址:
+			<input class="input-text" type="text" name="uri" required="required" />
+		</label></p>
+	</fieldset>
+	<fieldset>
+		<legend>属性</legend>
+		<p class="f_l"><label>
+			标题:
+			<input class="input-text" type="text" name="title" required="required" />
+		</label></p>
+		<p class="f_l"><label>
+			日期:
+			<input class="input-text" type="date" name="date" required="required" />
+		</label></p>
+		<p class="f_l"><label>
+			分类:
+			<input class="input-text" type="text" name="categories" required="required" />
+		</label></p>
+		<div class="clear"></div>
+		<p><label>
+			描述:
+			<textarea class="input-textarea" name="description"></textarea>
+		</label></p>
+	</fieldset>
+	<div class="h-10 clear"></div>
+	<div class="editor-container">
+		<div id="editor-nav">
+			<span class="f_l current" data-for="editor">编辑</span>
+			<span class="f_l" data-for="preview">预览</span>
+		</div>
+		<div class="h-10 clear"></div>
+		<textarea id="editor" name="content"></textarea>
+		<div id="preview"></div>
+	</div>
+	<div class="h-10"></div>
+	<button>保存</button>
+</form>
