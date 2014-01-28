@@ -65,7 +65,7 @@
 			var content, postPath, date, fileName;
 			var deferred = when.defer();
 			content = "---\n";
-			content = "layout: post\n"
+			content += "layout: post\n"
 			for (var i in data) {
 				if (i === 'content') continue;
 				if (i === 'uri') continue;
